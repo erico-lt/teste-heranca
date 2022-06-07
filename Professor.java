@@ -1,7 +1,14 @@
-public class Professor {
+public class Professor extends Pessoa{
     private String especialidade;
     private float salario;
 
+    public Professor(String nome, String sexo, String especialidade, int idade){
+        this.setNome(nome);
+        this.setSexo(sexo);
+        this.setEspecialidade(especialidade);
+        this.setIdade(idade);
+        this.setSalario(1500f);
+    }
     /*
      * Metodo para aumentar o salario, deve ser passado uma valor para "aumento"
      */
