@@ -33,4 +33,12 @@ public class Funcionario extends Pessoa{
         this.trabalhando = trabalhando;
     }
 
+    public String toString(){
+        return " Nome: " + this.getNome() + 
+        "\n Sexo: " + this.getSexo() + 
+        "\n Idade: " + this.getIdade() +
+        "\n Curso: " + this.getSetor() + 
+        "\n Matricula: " + this.getTrabalhando();
+    }
+
 }

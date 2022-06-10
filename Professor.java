@@ -34,4 +34,12 @@ public class Professor extends Pessoa{
         this.salario = salario;
     }
 
+    public String toString(){
+        return " Nome: " + this.getNome() + 
+        "\n Sexo: " + this.getSexo() + 
+        "\n Idade: " + this.getIdade() +
+        "\n Curso: " + this.getEspecialidade() + 
+        "\n Matricula: " + this.getSalario();
+    }
+
 }

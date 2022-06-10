@@ -38,10 +38,10 @@ public class Aluno extends Pessoa{
     }
 
     public String toString(){
-        return "Nome: " + this.getNome() + 
-        "/n Sexo: " + this.getSexo() + 
-        "/n Idade: " + this.getIdade() +
-        "/n Curso: " + this.getCurso() + 
-        "/n Matricula: " + this.getMatricula();
+        return " Nome: " + this.getNome() + 
+        "\n Sexo: " + this.getSexo() + 
+        "\n Idade: " + this.getIdade() +
+        "\n Curso: " + this.getCurso() + 
+        "\n Matricula: " + this.getMatricula();
     }
 }
