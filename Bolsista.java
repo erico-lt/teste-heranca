@@ -2,7 +2,12 @@ public class Bolsista extends Aluno {
     private int bolsa;
 
     public void renovarBolsa(){
-        this.setBolsa(25);
+        if(this.nota >= 7){
+           this.bolsa = 25;
+        }eles{
+         this.bolsa = 10;
+        }
+        
     }
 
     @Override
