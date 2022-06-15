@@ -1,22 +1,12 @@
 public class Aluno extends Pessoa{
     private String curso;
-    private boolean matricula;
-
-    public Aluno(String nome, String sexo, String curso, int idade){
-        this.setNome(nome);
-        this.setSexo(sexo);
-        this.setCurso(curso);
-        this.setIdade(idade);
-        this.setMatricula(true);
-    }
+    private int matricula;
+    private int valorMensalidade = 200;    
 
     // metodos para cancelar e renovar matricula
-    public void cancelarMatricula(){
-        this.setMatricula(false);
-    }
-    public void renovarMatricular(){
-        this.setMatricula(true);
-    }   
+    public void pagarMensalidade(){
+        this.setMatricula(this.getValorMensalidade());
+    }    
     
     /*/ metodos "get e set" para modificar e 
         retornar o status da matricula e curso
@@ -29,13 +19,21 @@ public class Aluno extends Pessoa{
         this.curso = curso;
     }
 
-    public boolean getMatricula() {
+    public int getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(boolean matricula){
+    public void setMatricula(int matricula){        
         this.matricula = matricula;
     }
+    
+    public int getValorMensalidade() {
+        return valorMensalidade;
+    }
+    
+    public void setValorMensalidade(int valorMensalidade) {
+        this.valorMensalidade = valorMensalidade;
+    }    
 
     public String toString(){
         return " Nome: " + this.getNome() + 
@@ -43,5 +41,6 @@ public class Aluno extends Pessoa{
         "\n Idade: " + this.getIdade() +
         "\n Curso: " + this.getCurso() + 
         "\n Matricula: " + this.getMatricula();
-    }
+    }     
+
 }
